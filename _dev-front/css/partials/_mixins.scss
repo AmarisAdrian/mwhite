@@ -1,0 +1,18 @@
+@mixin range-track() {
+    box-sizing: border-box;
+    width: $width-range-track;
+    height: $height-range-track;
+    background: $fill-range-track;
+    border-radius: $radius-range-track;
+  }
+  @mixin range-thumb() {
+    box-sizing: border-box;
+    box-shadow: $shadow-offset-x-range-thumb $shadow-offset-y-range-thumb
+      $size-range-thumb-shadow $color-range-thumb-shadow;
+    border: $border-width-range-thumb solid $border-color-range-thumb;
+    height: $height-range-thumb;
+    width: $width-range-thumb;
+    border-radius: $radius-range-thumb;
+    background: $background-color-range-thumb;
+    cursor: pointer;
+  }

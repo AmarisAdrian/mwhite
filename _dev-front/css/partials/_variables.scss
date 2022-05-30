@@ -1,0 +1,28 @@
+$primary :  #89007e;
+
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$color-range-output: #383c42;
+$color-input-placeholder: #c3c4c6;
+$height-range-bounds: 22px;
+$background-color-range-thumb: #333940;
+$radius-range-thumb: 100px;
+$height-range-thumb: 24px;
+$width-range-thumb: 24px;
+$size-range-thumb-shadow: 25px;
+$color-range-thumb-shadow: rgba(#000, 0.5);
+$shadow-offset-y-range-thumb: 4px;
+$shadow-offset-x-range-thumb: 0px;
+$border-width-range-thumb: 6px;
+$border-color-range-thumb: #fff;
+$width-range-track: 100%;
+$height-range-track: 4px;
+$radius-range-track: 100px;
+$fill-range-track: #e6e6e6;
+$fill-range-track-active: $primary;
+
+//Output
+$height-range-output: 60px;
+$min-width-range-output: 32px;
+$padding-x-range-output: 20px;
+$size-range-output-arrow: 10px;
+$offset-y-range-output: 4px;

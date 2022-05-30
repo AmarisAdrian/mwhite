@@ -1,0 +1,142 @@
+.range {
+  position: relative;
+
+  //Native
+  input[type="range"] {
+    appearance: none;
+    padding: 0;
+    width: $width-range-track;
+    height: $height-range-bounds;
+    cursor: pointer;
+    display: block;
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+    }
+
+    &[disabled] {
+      opacity: 0.3;
+      cursor: default;
+    }
+  }
+
+  //Plugin wrapper
+  .rangeslider {
+    position: relative;
+    height: $height-range-bounds;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  //Track
+  .rangeslider:before {
+    @include range-track();
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  input::-webkit-slider-runnable-track {
+    @include range-track();
+    margin: $height-range-bounds / 2 0;
+  }
+
+  input::-moz-range-track {
+    @include range-track();
+    margin: $height-range-bounds / 2 0;
+  }
+
+  input::-ms-track {
+    @include range-track();
+    color: transparent;
+    padding: $height-range-bounds / 2 0;
+    background: transparent;
+    border-color: transparent;
+  }
+
+  //Track fill
+  input::-ms-fill-lower,
+  input::-ms-fill-upper {
+    @include range-track();
+  }
+
+  input::-ms-fill-lower {
+    background: $fill-range-track-active;
+  }
+
+  .rangeslider-fill-lower {
+    background-color: $fill-range-track-active;
+    border-radius: $radius-range-track;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: $height-range-track;
+    will-change: width;
+  }
+
+  //Thumb
+  input::-webkit-slider-thumb {
+    @include range-thumb();
+    appearance: none;
+    transform: translateY(-50%);
+    margin-top: $height-range-track / 2;
+  }
+
+  input::-moz-range-thumb {
+    @include range-thumb();
+  }
+
+  input::-ms-thumb {
+    @include range-thumb();
+  }
+
+  .rangeslider-thumb {
+    @include range-thumb();
+    position: absolute;
+    touch-action: pan-x;
+    top: 50%;
+    transform: translateY(-50%);
+    will-change: left;
+  }
+
+  .range-output {
+    position: absolute;
+    left: ($width-range-thumb - $border-width-range-thumb * 2) / 2;
+    top: ($width-range-thumb - $border-width-range-thumb * 2) / 2;
+    transform-origin: 0 0;
+    transition: transform 0.4s $easeOutBack;
+    user-select: none;
+
+    .output {
+      display: block;
+      position: absolute;
+      height: $height-range-output;
+      line-height: $height-range-output;
+      min-width: $min-width-range-output;
+      padding: 0 $padding-x-range-output;
+      top: -($width-range-thumb / 2) - $offset-y-range-output - $size-range-output-arrow;
+      transform: translate(-50%, -100%);
+      background: $color-range-output;
+      color: #fff;
+      border-radius: 100px;
+      white-space: nowrap;
+      font-weight: bold;
+      font-size: 1.2em;
+      text-align: center;
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: -$size-range-output-arrow + 2px; //Subtract 2 to get slight overlap that renders more nicely
+        left: 50%;
+        border: $size-range-output-arrow solid $color-range-output;
+        border-bottom: none;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

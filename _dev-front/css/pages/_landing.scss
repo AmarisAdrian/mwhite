@@ -1,0 +1,274 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fbf7ff;
+}
+
+.banner-top {
+    padding: 0 15px;
+
+    &__left {
+        width: 100%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../images/bg-patter-mwhite.jpg);
+    }
+
+    &__right {
+        width: 100%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../images/banner-top__mosaico.png);
+    }
+
+    &__botton {
+        background: #f2f2f2;
+    }
+
+    h2 {
+        font-family: Rubik;
+        font-size: 42px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.18;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        margin-top: 200px;
+    }
+
+    .btn {
+        background: #fff;
+        color: #89007e;
+        font-family: Rubik;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        border-radius: 8px;
+    }
+}
+
+.para-comprar {
+    padding: 3rem 15px;
+
+    &__title {
+        object-fit: contain;
+        font-family: Rubik;
+        font-size: 41px !important;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #89007e;
+    }
+
+    &__subtitle {
+        object-fit: contain;
+        font-family: Rubik;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: center;
+        color: #606060;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &__text {
+            display: flex;
+            width: 60%;
+            object-fit: contain;
+            font-family: Rubik;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            text-align: right;
+            color: #606060;
+        }
+
+        &__icon {
+            padding: 1rem;
+            width: 40%;
+        }
+    }
+}
+
+.nosotros {
+    background: rgb(161, 49, 129);
+    background: radial-gradient(circle, rgba(161, 49, 129, 1) 13%, rgba(74, 18, 60, 1) 100%);
+    min-height: 500px;
+    padding: 3rem;
+    @extend .container;
+
+    .logo {
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    p {
+        font-size: 1.2rem;
+        text-align: center;
+        color: #ffffff;
+        margin: 1rem auto;
+        max-width: 800px;
+        display: block;
+    }
+
+    hr {
+        max-width: 300px;
+        width: 40%;
+        border-top: 1px solid rgba(253, 253, 253, 0.67);
+    }
+}
+
+.categorias {
+    padding: 3rem 15px;
+
+    &__title {
+        object-fit: contain;
+        font-family: Rubik;
+        font-size: 41px !important;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #89007e;
+    }
+
+    &__subtitle {
+        object-fit: contain;
+        font-family: Rubik;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: center;
+        color: #606060;
+    }
+
+}
+
+.pasos {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/banner-mujer-phone.png);
+    padding: 6rem;
+
+    &__title {
+        object-fit: contain;
+        font-family: Rubik;
+        font-size: 41px !important;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: left;
+        color: #89007e;
+    }
+
+    &__subtitle {
+        object-fit: contain;
+        font-family: Rubik;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: left;
+        color: #606060;
+    }
+
+    &__container {
+        max-width: 680px;
+        padding: 2rem;
+        background-color: #ffffff;
+    }
+
+    &__list {
+        &__item {
+            object-fit: contain;
+            font-family: Rubik;
+            font-size: 15px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.67;
+            letter-spacing: normal;
+            text-align: left;
+            color: #606060;
+            margin-bottom: 1rem;
+        }
+
+        &__number {
+            font-family: Rubik;
+            font-size: 35px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #89007e;
+        }
+    }
+
+    .btn {
+        border: solid 1px #89007e;
+        background-color: #ffffff;
+        font-family: Rubik;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2.2;
+        letter-spacing: normal;
+        text-align: center;
+        color: #89007e;
+    }
+}
+
+.cuotas {
+    background: rgb(161, 49, 129);
+    background: radial-gradient(circle, rgba(161, 49, 129, 1) 13%, rgba(74, 18, 60, 1) 100%);
+    &__title {
+        object-fit: contain;
+        font-family: Rubik;
+        font-size: 30px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+    &__card {
+        border-radius: 6px;
+        background-color: rgba(255, 255, 255, 0.30);
+        padding: .5rem 1rem;
+        color: #ffffff;
+    }
+}
